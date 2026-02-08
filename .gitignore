@@ -1,17 +1,52 @@
+# Python
 __pycache__/
-.ipynb_checkpoints/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
 .Python
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual envs
 env/
 venv/
+.venv/
 ENV/
+.env
+.env.*
 
-# Local data (not committed)
-/data/raw/*.csv
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
 
-# Generated outputs (not committed)
-/artifacts/*.csv
-/artifacts/*.json
-/artifacts/*.joblib
+# Data (keep folders, ignore files)
+data/**
+!data/
+!data/**/
+!data/**/README.md
+!data/**/.gitkeep
+
+data/raw/*
+!data/raw/README.md
+!data/raw/.gitkeep
+
+# Artifacts / outputs (keep folders, ignore files)
+artifacts/**
+!artifacts/
+!artifacts/**/
+!artifacts/**/README.md
+!artifacts/**/.gitkeep
+
+artifacts/*
+!artifacts/README.md
+!artifacts/.gitkeep
+
+# Caches 
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage*
+htmlcov/
