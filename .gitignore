@@ -8,7 +8,7 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Virtual envs
+# Virtual environments
 env/
 venv/
 .venv/
@@ -22,29 +22,27 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Data (keep folders, ignore files)
+# Local datasets: keep folder docs, ignore data files
 data/**
 !data/
-!data/**/
-!data/**/README.md
-!data/**/.gitkeep
-
-data/raw/*
+!data/README.md
+!data/.gitkeep
+!data/raw/
 !data/raw/README.md
 !data/raw/.gitkeep
 
-# Artifacts / outputs (keep folders, ignore files)
+docs/**
+!docs/
+!docs/README.md
+!docs/.gitkeep
+
+# Generated artifacts: keep folder docs, ignore outputs
 artifacts/**
 !artifacts/
-!artifacts/**/
-!artifacts/**/README.md
-!artifacts/**/.gitkeep
-
-artifacts/*
 !artifacts/README.md
 !artifacts/.gitkeep
 
-# Caches 
+# Caches
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/

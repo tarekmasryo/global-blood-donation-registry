@@ -1,8 +1,14 @@
 # artifacts
 
-This folder is used for generated outputs from the notebook (not committed by default).
+This folder is used for generated outputs from the notebook and is not intended for committed runtime files.
 
-Typical outputs:
-- `donor_outreach_scored.csv` — scored eligible donors with calibrated probabilities and selected policy
-- `model_bundle.joblib` — trained pipeline + calibration + threshold policy + metadata
-- `metrics_holdout.json` — evaluation metrics for the holdout window
+Typical generated outputs:
+
+- `data_quality_report.csv`
+- `donor_outreach_scored.csv`
+- `policy_summary.csv`
+- `holdout_decile_table.csv`
+- `holdout_topk_policies.csv`
+- `blood_type_stress_index.csv`
+- `model_bundle.joblib`
+- `metrics_holdout.json`
